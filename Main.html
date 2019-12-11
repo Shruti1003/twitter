@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Where's My Spot?</title>
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <link rel = "stylesheet" type = "text/css" href = "Main.css">
+</head>
+<body onload = getOption()>
+    <nav>
+        <img src = "images/navigationImg.png" alt = "Navigation Bar"/>
+    </nav>
+
+    <section id = "left">
+        <img src = "images/parkingMenu(left).png" alt = "Parking Menu"/>
+        <form id = "reportForm">
+            <label>
+                Send an Update:
+            </label>
+            <br>
+            <input type = "text" placeholder = "UNCC ID">
+            <br>
+            <select>
+                <option>Cone</option>
+                <option>North</option>
+                <option>Union</option>
+                <option>CRI</option>
+            </select>
+            <br>
+            <input type = "checkbox">Full
+            <input type = "checkbox" id = "last">Empty
+            <br>
+            <input id = "submit" type = "submit" value = "Report">
+        </form>
+    </section>
+
+    <section id = "middle">
+        <h1>Where's My Spot?</h1>
+        <hr id = "topHR">
+                <form>
+                    <label><a href = #
+                              title = "Click your permit to display the decks that you can park in.">
+                              Select Your Permit: </a></label><br>
+                    <label>
+                        <select id = "permitDropDown">
+                            <option value = "Night"
+                                    onclick = "getOption()">Night</option>
+                            <option value = "Commuter Standard"
+                                    onclick = "getOption()">Commuter</option>
+                            <option value = "Two-Day Commuter Permit"
+                                    onclick = "getOption()">2 Day Commuter</option>
+                            <option value = "Resident Standard"
+                                    onclick = "getOption()">Resident</option>
+                            <option value = "Greek Village"
+                                    onclick = "getOption()">Greek Village</option>
+                            <option value = "Faculty/Staff"
+                                    onclick = "getOption()">Faculty/Staff</option>
+                        </select>
+                    </label>
+                    <input class = "button" type="button" onclick="getOption()" value="View Options">
+                </form>
+                <br>
+                <hr id = "bottomHR">
+                <p id="permitName">Night</p><p>&nbspPermit Availability --</p>
+                <p id = "displayTime"></p>
+                <!--<p id = "greekParking">*View 'Parking Lots' Tab for more Greek Village Parking*</p>-->
+                <div class = "scroll" id = "myDIV">
+                    <table id = "table customScroll">
+                        <tr id = "headings" class = "noBorder">
+                            <th class = "heading">Deck</th>
+                            <th class = "center heading">Remaining</th>
+                            <th class = "center heading">Location</th>
+                        </tr>
+                        <tr id = "cone">
+                            <th>Cone</th>
+                            <th class = "center green">154</th>
+                            <th class = "center"><a href = "https://maps.uncc.edu/#/?nav=pLdbs&ctr=35.304664368345065,-80.73419672082048&z=19&blnd=t,cc-parking,cc-amenities,outage&vis=t,park-fs&vis=f,trans-lrs&pop=C9214C5D-D52E-4BB5-91BC-E7B73C869F71">
+                                <img src = "images/locationlogo.png" alt = "location"></a></th>
+                        </tr>
+                        <tr id = "north">
+                            <th>North Village</th>
+                            <th class = "center red">62</th>
+                            <th class = "center"><img src = "images/locationlogo.png" alt = "location"></th>
+                        </tr>
+                        <tr id = "union">
+                            <th>Union</th>
+                            <th class = "center red">0</th>
+                            <th class = "center"><img src = "images/locationlogo.png" alt = "location"></th>
+                        </tr>
+                        <tr id = "cri">
+                            <th>CRI</th>
+                            <th class = "center green">443</th>
+                            <th class = "center"><img src = "images/locationlogo.png" alt = "location"></th>
+                        </tr>
+                        <tr id = "west">
+                            <th>West</th>
+                            <th class = "center green">298</th>
+                            <th class = "center"><a href = "https://maps.uncc.edu/#/?nav=pLdbs&ctr=35.30548700000001,-80.73660899999999&z=19&blnd=t,cc-parking,cc-amenities,outage&vis=t,park-cfs&vis=f,trans-lrs&pop=8596383F-B2F1-4E1F-9B02-5F1AF71E88C2">
+                                <img src = "images/locationlogo.png" alt = "location"></a></th>
+                        </tr>
+                        <tr id = "south">
+                            <th>South Village</th>
+                            <th class = "center green">292</th>
+                            <th class = "center"><img src = "images/locationlogo.png" alt = "location"></th>
+                        </tr>
+                        <tr id = "east" class = "noBorder">
+                            <th>East</th>
+                            <th class = "center red">8</th>
+                            <th class = "center"><img src = "images/locationlogo.png" alt = "location"></th>
+                        </tr>
+                    </table>
+                </div><!--End of table scroll div-->
+
+    </section><!--End of middle section-->
+
+    <section id = "right">
+        <img src = "images/parkingmenu(right).png" alt = "Parking Menu"/>
+    </section>
+
+    <hr id = "footerHR">
+    <footer>
+        <img src = "images/footer.png" alt = "footer"/>
+    </footer>
+</body>
+<script src = "Main.js"></script>
+</html>

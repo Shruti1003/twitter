@@ -1,0 +1,276 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
+section
+{
+    display: inline-block;
+    position: absolute;
+    top: 25%;
+}
+
+form
+{
+    margin-top: 25px;
+}
+
+#left
+{
+    left: 17%;
+}
+
+#right
+{
+    right: 17%;
+}
+
+#middle
+{
+    left: 33%;
+    top: 22%;
+    width: 50%;
+}
+
+#middle h1, #middle hr
+{
+    left: 33%;
+}
+
+select
+{
+   width: 335px;
+    height: 28px;
+    margin-top: -15px;
+    color: black;
+}
+
+hr
+{
+    margin-top: -10px;
+    margin-left: 0;
+    width: 470px;
+}
+
+table
+{
+    margin-top: 5px;
+    width: 63%;
+    text-align: left;
+    margin-right: 0;
+}
+
+.heading
+{
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: none;
+    letter-spacing: 0;
+    font-weight: bold;
+}
+
+.scroll
+{
+    height: 330px;
+    overflow-y: scroll;
+}
+
+th
+{
+    padding-bottom: 10px;
+}
+
+table img
+{
+    height: 40px;
+    width: auto;
+}
+
+p
+{
+    text-decoration: underline;
+}
+
+.green
+{
+    color: green;
+    fill: green;
+}
+
+.red
+{
+    color: red;
+}
+
+.center
+{
+    text-align: center;
+}
+
+#tooltip
+{
+    color: black;
+    text-decoration: none;
+}
+
+.ui-tooltip
+{
+    box-shadow: none;
+}
+
+.ui-tooltip-content
+{
+    font-size: 12px;
+    box-shadow: none;
+}
+
+a
+{
+    color: black;
+    text-decoration: none;
+}
+
+th
+{
+    border-bottom: 1px solid lightgrey;
+    padding-top: 10px;
+    font-size: 17px;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
+.noBorder th
+{
+    border: none;
+}
+
+#reportForm
+{
+    margin-top: 25px;
+}
+
+#reportForm label
+{
+    text-decoration: underline;
+}
+
+#reportForm select
+{
+    margin-top: 15px;
+    width: 210px;
+}
+
+#reportForm input[type = 'text']
+{
+    padding-top: 6px;
+    padding-bottom: 6px;
+    width: 198px;
+    border: 1px solid darkgrey;
+    background-color: whitesmoke;
+    padding-left: 9px;
+    border-radius: 3px;
+}
+
+#reportForm input
+{
+    margin-top: 20px;
+}
+
+#last
+{
+    margin-left: 30px;
+}
+
+#reportForm input[type = 'submit']
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: auto;
+    text-align: left;
+}
+
+input[type = 'checkbox']
+{
+    width: 17px;
+    height: 17px;
+    border: 4px solid black;
+}
+
+input[type = 'button']
+{
+    font-size: 13px;
+}
+
+input[type = "time"]
+{
+    border: none;
+    margin-left: 4px;
+    padding: 0;
+    font-size: 17px;
+    font-family: sans-serif;
+    letter-spacing: 0.07em;
+    font-weight: bold;
+}
+
+#middle select
+{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.button
+{
+    border: none;
+    background-color: white;
+    margin: 15px -8px 0 8px;
+    padding: 0;
+}
+
+.button:hover, .button
+{
+    cursor: pointer;
+}
+
+p {
+    text-decoration: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    font-size: 20px;
+    display: inline-block;
+    width: auto;
+}
+
+footer
+{
+    position: absolute;
+    top: 110%;
+}
+
+#footerHR
+{
+    position: absolute;
+    top: 108%;
+    left: 17%;
+    width: 950px;
+}
+
+#displayTime
+{
+    margin-right: -5px;
+}
+
+#topHR
+{
+    margin-bottom: -13px;
+    margin-top: 3px;
+}
+
+#bottomHR
+{
+    margin-bottom: 25px;
+}
